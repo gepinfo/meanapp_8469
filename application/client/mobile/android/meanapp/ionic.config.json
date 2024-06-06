@@ -1,0 +1,7 @@
+{
+  "name": "meanapp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

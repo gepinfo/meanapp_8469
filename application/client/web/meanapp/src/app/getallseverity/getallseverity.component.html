@@ -1,0 +1,12 @@
+<h2 class="screen-align">Getallseverity</h2>
+<div class="">
+    <div id="template-i0l7" class="">
+        <div name="grid_template-i616" id="template-i616">
+            <ag-grid-angular #agGrid style="width: 100%; height: 100%;" id="myGrid"
+            class="ag-theme-balham" [columnDefs]="columnDefs" [pagination]="true" [paginationPageSize]="paginationPageSize"
+            [defaultColDef]="defaultColDef" [rowData]="rowData" [rowSelection]="rowSelection"
+            (gridReady)="onGridReady($event)" domLayout='autoHeight' (selectionChanged)="onSelectionChanged($event)"></ag-grid-angular>
+        </div>
+        <div id="myGrid" class="ag-theme-alpine "></div>
+    </div>
+</div>

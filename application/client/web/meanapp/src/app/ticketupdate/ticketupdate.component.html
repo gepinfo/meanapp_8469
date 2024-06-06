@@ -1,0 +1,45 @@
+<h2 class="screen-align">Ticketupdate</h2>
+<div class="">
+    <div id="template-ivcf" class="gjs-row">
+        <div id="template-ic0n" class="gjs-cell">
+            <label id="template-ir6j" class="">Name</label>
+            <input type="text" id="template-inugx" [(ngModel)]="tickets.name"
+            [ngModelOptions]="{standalone: true}" ngDefaultControl class="form-control "
+            />
+        </div>
+        <div id="template-i7dh" class="gjs-cell">
+            <label id="template-irgjx" class="">description</label>
+            <input type="text" id="template-ibkkn" [(ngModel)]="tickets.description"
+            [ngModelOptions]="{standalone: true}" ngDefaultControl class="form-control "
+            />
+        </div>
+        <div id="template-iiqy" class="gjs-cell">
+            <label id="template-ijg26" class="">callername</label>
+            <input type="text" id="template-ip9ve" class="form-control "
+            />
+        </div>
+    </div>
+    <div id="template-ihm7" class="gjs-row">
+        <div id="template-ii5v" class="gjs-cell">
+            <label id="template-ifk0l" class="">types
+                <br id="template-ixvs2" class="">
+            </label>
+            <div id="template-iym92" class="">
+                <ng-select id="template-icmqb" name="dynamicdropdown_template-icmqb" [searchable]="true"
+                [virtualScroll]="true" [items]="typesitemArray" bindLabel="name" bindValue="name"
+                [(ngModel)]="tickets.types" [ngModelOptions]="{standalone: true}" ngDefaultControl
+                (click)="typesGetAllValues()" class="form-control "></ng-select>
+            </div>
+            <div type="button" id="template-i41tk" (click)="Update()" class="btn btn-primary ">update</div>
+        </div>
+        <div id="template-i7ai" class="gjs-cell">
+            <label id="template-i9l0r" class="">severity</label>
+            <div id="template-ilt98" class="">
+                <ng-select id="template-itwci" name="dynamicdropdown_template-itwci" [searchable]="true"
+                [virtualScroll]="true" [items]="itemArray" bindLabel="" bindValue="" [(ngModel)]="tickets.severity"
+                [ngModelOptions]="{standalone: true}" ngDefaultControl class="form-control "></ng-select>
+            </div>
+        </div>
+        <div id="template-ixm1" class="gjs-cell"></div>
+    </div>
+</div>
